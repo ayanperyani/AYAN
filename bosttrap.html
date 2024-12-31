@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bostrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>AYAN AUTOMOBILE</title>
+  <style>
+    /* .navbar {
+      background-color:rgb(134, 134, 134) !important;
+      z-index: 100px;
+
+    } */
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493),
+        0px 0px 20px rgba(0, 0, 0, 0.493),
+        0px 0px 40px rgba(0, 0, 0, 0.493),
+        0px 0px 80px rgba(0, 0, 0, 0.493);
+
+    }
+
+
+    .nav-item {
+      color: rgb(240, 18, 18) !important;
+      /* margin-left: 10px; */
+    }
+
+    .navbar-nav {
+      margin-left: 500px;
+
+    }
+
+    .nav-link {
+      color: rgb(0, 0, 0) !important;
+      font-size: 17px;
+    }
+
+    .d-block {
+      height: 90vh;
+    }
+
+    /* @media (max-width:1440px) {
+      .nav-link {
+        color: rgb(0, 0, 0) !important;
+        font-size: 15px;
+      }
+
+      .navbar-nav {
+        margin-left: 250px;
+
+      }
+
+    } */
+
+    @media (max-width:1080px) {
+      .nav-link {
+        color: rgb(0, 0, 0) !important;
+        font-size: 15px;
+      }
+
+      .navbar-nav {
+        margin-left: 250px;
+
+      }
+
+    }
+
+    @media (max-width:1037px) {
+      .nav-link {
+        color: rgb(0, 0, 0) !important;
+        font-size: 13px;
+      }
+
+      .navbar-nav {
+        margin-left: 240px;
+
+      }
+    }
+
+    @media (max-width:1030px) {
+      .nav-link {
+        color: rgb(0, 0, 0) !important;
+        font-size: 13px;
+      }
+
+      .navbar-nav {
+        margin-left: 240px;
+
+      }
+    }
+
+    @media (max-width:1024px) {
+      .nav-link {
+        color: rgb(0, 0, 0) !important;
+        font-size: 14px;
+      }
+
+      .navbar-nav {
+        margin-left: 230px;
+
+      }
+      .navbar-brand{
+        font-size: 40px;
+      }
+
+    }
+
+    @media (max-width:991px) {
+      .nav-link {
+        color: rgb(0, 0, 0) !important;
+        font-size: 13px;
+      }
+
+      .navbar-nav {
+        margin-left: 0px;
+        margin-top: 50px;
+      }
+
+      .navbar-nav {
+        margin-left: 0px;
+        margin-top: 50px;
+        text-align: center;
+
+
+      }
+
+      .nav-item:hover {
+        background: #000;
+        /* color: white; */
+      }
+
+      .nav-link:hover {
+        color: white !important;
+      }
+
+    }
+
+    @media (max-width:768px) {
+      .nav-link {
+        color: rgb(0, 0, 0) !important;
+        font-size: 13px;
+      }
+
+      .navbar-nav {
+        margin-left: 0px;
+        margin-top: 50px;
+
+      }
+
+
+      /* .d-block { */
+        /* height: 85vh; */
+        /* margin-bottom: 50px; */
+      /* } */
+
+
+
+      @keyframes apear {
+      from{
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100%); */
+        transition: 1s;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+        
+      }
+      
+    }
+    #cards{
+      animation: apear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 10%;
+      animation-duration: 1s;
+      /* transition: 3s; */
+    }
+
+    }
+
+    @media (max-width:505px) {
+
+      .navbar-brand {
+        font-size: 25px;
+      }
+
+    }
+
+    @media (max-width:425px) {
+
+      .navbar-brand {
+        font-size: 20px;
+      }
+
+      .d-block {
+        height: 50vh;
+      }
+
+      @keyframes apear {
+      from{
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100%); */
+        transition: 1s;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+        
+      }
+      
+    }
+    #cards{
+      animation: apear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 0%;
+      /* animation-duration: 1s; */
+      /* transition: 3s; */
+    }
+    }
+
+/* //=================================================================================================// */
+
+     @keyframes apear {
+      from{
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100%); */
+       
+       } 
+       to{
+    opacity: 1;
+    scale: 1;
+    /* transform: translateX(0px); */
+    
+       }
+      
+    }
+    #cards{ 
+       animation: apear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 20%;
+       /* transition: 3s;  */
+     } 
+
+     @keyframes apear {
+      from{
+        opacity: 0;
+        scale: 0.5; 
+        /* transform: translateX(-100%); */
+       }
+      to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+         
+      }
+      
+    }
+    .card{
+      animation: apear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 20%;
+    }   
+
+    @keyframes apear {
+      from{
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100%); */
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+        
+      }
+      
+    }
+    #luxurycars{
+      animation: apear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 20%;
+    }  
+
+    @keyframes apear {
+      from{
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100%); */
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+        
+      }
+      
+    }
+    #contactus{
+      animation: apear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 20%;
+    }  
+
+    @keyframes apear {
+      from{
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100%); */
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+        
+      }
+      
+    }
+    #aboutus{
+      animation: apear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 20%;
+    }  
+
+  </style>
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AYAN AUTOMOBILE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#cards">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#luxurycars">LUXURY CARS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">CONTACT US</a>
+          </li>
+
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- CARSOUL -->
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="margin-bottom: 50px;">
+        <img src="./AMG3.avif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>WELLCOM TO AYAN AUTOMOBILE</h3>
+          <p> Experience automotive excellence like never before</p>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- CARDS -->
+
+    <div id="cards"
+      style="border: 3px solid black ; border-radius: 20px; font-family: 'Times New Roman', Times, serif;">
+      <h1 style="text-align: center;">OUR STOCK</h1>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card" style="border-radius: 20px; border: 1px solid black;">
+              <img src="./civic 2024 rs.jpg" class="card-img-top" alt="..."
+                style=" cursor: pointer; height: 260px; border-radius: 20px;">
+              <div class="card-body">
+                <h5 class="card-title">HONDA CIVIC RS TURBO (2025)</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nesciunt
+                  error
+                  fugit blanditiis necessitatibus provident excepturi autem voluptatibus dolor nobis possimus deserunt
+                  officia non, delectus veritatis omnis beatae, quidem a.
+                  Cumque provident ex voluptatibus animi sint at harum quia, ullam porro! Voluptates a quidem delectus
+                  deserunt, corporis illo consequatur vel dignissimos autem, cupiditate mollitia et dicta, nesciunt
+                  asperiores molestias amet?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border-radius: 20px; border: 1px solid black;">
+              <img src="./Honda_Civic oriel.jpg" class="card-img-top" alt="..."
+                style=" cursor: pointer; height: 260px; border-radius: 20px ; ">
+              <div class="card-body">
+                <h5 class="card-title">HONDA CIVIC ORIEL (2025)</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nesciunt
+                  error
+                  fugit blanditiis necessitatibus provident excepturi autem voluptatibus dolor nobis possimus deserunt
+                  officia non, delectus veritatis omnis beatae, quidem a.
+                  Cumque provident ex voluptatibus animi sint at harum quia, ullam porro! Voluptates a quidem delectus
+                  deserunt, corporis illo consequatur vel dignissimos autem, cupiditate mollitia et dicta, nesciunt
+                  asperiores molestias amet?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px ;">
+              <img src="./grande 1.jpg" class="card-img-top" alt="..."
+                style="  cursor: pointer; height: 260px; border-radius: 20px;">
+              <div class="card-body">
+                <h5 class="card-title">TOYOTA COROLLA GRANDE </h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse quis dolor Iusto qui incidunt laborum
+                  nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet
+                  consectetur sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border-radius: 20px; border: 1px solid black;">
+              <img src="./gr 1.png" class="card-img-top" alt="..." style=" cursor: pointer; border-radius: 20px ;">
+              <div class="card-body">
+                <h5 class="card-title">TOYOTA REVO GR</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nesciunt
+                  error
+                  fugit blanditiis necessitatibus provident excepturi autem voluptatibus dolor nobis possimus deserunt
+                  officia non, delectus veritatis omnis beatae, quidem a.
+                  Cumque provident ex voluptatibus animi sint at harum quia, ullam porro! Voluptates a quidem delectus
+                  deserunt, corporis illo consequatur vel dignissimos autem, cupiditate mollitia et dicta, nesciunt
+                  asperiores molestias amet?.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px ;">
+              <img src="./ROCCO3.png" class="card-img-top" alt="..."
+                style=" cursor: pointer; height: 240px; border-radius: 20px;">
+              <div class="card-body">
+                <h5 class="card-title">TOYOTA REVO ROCCO </h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse quis dolor Iusto qui incidunt laborum
+                  nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit sit amet
+                  consectetur sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px ;">
+              <img src="./revo.jpg" class="card-img-top" alt="..."
+                style=" cursor: pointer; height: 260px; border-radius: 20px;">
+              <div class="card-body">
+                <h5 class="card-title">TOYOTA REVO BUMPER SENSOR </h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse quis dolor Iusto qui incidunt laborum
+                  nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px ;">
+              <img src="./sigma.webp" class="card-img-top" alt="..."
+                style="  cursor: pointer; height: 260px; border-radius: 20px;">
+              <div class="card-body">
+                <h5 class="card-title">TOYOTA FORTUNER SIGMA </h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse quis dolor Iusto qui incidunt laborum
+                  nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px ;">
+              <img src="./legender.avif" class="card-img-top" alt="..."
+                style="height: 260px; border-radius: 20px; cursor: pointer;">
+              <div class="card-body">
+                <h5 class="card-title">TOYOTA FORTUNER SIGMA LEGENDER </h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse quis dolor Iusto qui incidunt laborum
+                  nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px ;">
+              <img src="./lc.jpg" class="card-img-top" alt="..."
+                style="height: 260px; border-radius: 20px; cursor: pointer;">
+              <div class="card-body">
+                <h5 class="card-title">TOYOTA LAND CRUSER ZX </h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse Pariatur cupiditate quia sequi vero quis
+                  dolor Iusto qui incidunt laborum nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet .</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS FOR LUXURY CARS -->
+    <div id="luxurycars" style="margin-top: 50px; border: 2px solid black; border-radius: 20px; margin-bottom: 50px;">
+      <h1 style="text-align: center; margin-bottom: 50px;">LUXURY CARS</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px;">
+              <img src="./gt2.jpg" class="card-img-top" alt="..." style=" cursor: pointer; border-radius: 20px;">
+              <div class="card-body">
+                <h5 class="card-title">AUDI e-tron GT</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse Pariatur cupiditate quia sequi vero quis
+                  dolor Iusto qui incidunt laborum nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px;">
+              <img src="./qatar2.avif" class="card-img-top" alt="..."
+                style=" cursor: pointer; border-radius: 20px; height: 330px;">
+              <div class="card-body">
+                <h5 class="card-title">AUDI e-tron QATAR</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse Pariatur cupiditate quia sequi vero quis
+                  dolor Iusto qui incidunt laborum nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px;">
+              <img src="./bmw1.jpg" class="card-img-top" alt="..."
+                style=" cursor: pointer; border-radius: 20px; height: 330px;">
+              <div class="card-body">
+                <h5 class="card-title">BMW </h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aperiam earum
+                  dicta quibusdam nostrum voluptas temporibus dolore molestias dolores dolorem expedita vero, commodi
+                  exercitationem debitis, assumenda, mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse Pariatur cupiditate quia sequi vero quis
+                  dolor Iusto qui incidunt laborum nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px;">
+              <img src="./g63.webp" class="card-img-top" alt="..."
+                style=" cursor: pointer; border-radius: 20px; height: 330px;">
+              <div class="card-body">
+                <h5 class="card-title">MARCEDES G63</h5>
+                <p class="card-text">Lorem ipsum dolor sit, . Accusantium aperiam earum dicta quibusdam nostrum voluptas
+                  temporibus dolore molestias dolores dolorem expedita vero, commodi exercitationem debitis, assumenda,
+                  mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse Pariatur cupiditate quia sequi vero quis
+                  dolor Iusto qui incidunt laborum nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 1px solid black; border-radius: 20px;">
+              <img src="./thar.webp" class="card-img-top" alt="..."
+                style=" cursor: pointer; border-radius: 20px; height: 330px;">
+              <div class="card-body">
+                <h5 class="card-title">MAHINDRA THAR</h5>
+                <p class="card-text">Lorem ipsum dolor sit, . Accusantium aperiam earum dicta quibusdam nostrum voluptas
+                  temporibus dolore molestias dolores dolorem expedita vero, commodi exercitationem debitis, assumenda,
+                  mollitia modi eius tempora?
+                  Pariatur cupiditate quia sequi vero in eligendi possimus esse Pariatur cupiditate quia sequi vero quis
+                  dolor Iusto qui incidunt laborum nesciunt porro dolorem itaque Lorem, ipsum dolor sit amet .</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- //=================================================================================================================== -->
+  <!-- //===============================form=============================// -->
+  <div class="container" id="contactus">
+    <h2>CONTACT US</h2>
+    <form action="">
+      <div class="form-group">
+        <input type="name" onblur="fun1()" id="name" required>
+        <label for="">NAME</label>
+        <i class="fa-solid fa-keyboard"></i>
+      </div>
+
+      <div class="form-group">
+        <input type="email" onblur="fun2()" id="email" required>
+        <label for="">E-MAIL</label>
+        <i class="fa-regular fa-envelope"></i>
+      </div>
+
+      <div class="form-group">
+        <input type="password" onblur="fun3()" id="pass1" required>
+        <label for="">PASSWORD</label>
+        <i class="fa-solid fa-lock"></i>
+      </div>
+
+      <div class="form-group">
+        <input type="password" onblur="fun4()" id="pass2" required>
+        <label for="">CONFORM PASSWORD</label>
+        <i class="fa-solid fa-unlock-keyhole"></i>
+      </div>
+
+      <input type="button" value="SUBMIT" id="button">
+    </form>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("#button").click(function (event) {
+        let name = $("#name").val()
+        let email = $("#email").val()
+        let password1 = $("#pass1").val()
+        let password2 = $("#pass2").val()
+
+        if (name == "" || email == "" || password1 == "" || password2 == "") {
+          alert("inclomple data")
+          return false;
+        }
+
+        let emailregix = /^[\w.-]+@[\w.-]+\.[a-z A-Z]{2,}$/
+
+        if (!emailregix.test(email)) {
+          alert("enter a valid email address.");
+          return false;
+        }
+
+        // let password1regix = /^[a-zA-Z0-9]$/
+
+        // if (!password1regix.test(pass1)) {
+        //   alert("password atleast 8 diget")
+        //   return ;
+        // }
+
+        if (password1 != password2) {
+          alert("password not match ")
+          return false;
+        }
+
+        else {
+          alert("your form is sumbit");
+          return true;
+        }
+      });
+    });
+
+
+  </script>
+
+  <!-- //=====================ABOUT US===============// -->
+  <div class="container" id="aboutus">
+    <div class="card mb-3"
+      style="height: 440px; width: 100%; margin-top: 100px; border: 2px solid black; border-radius: 40px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./AYAN.png" class="img-fluid rounded-start" alt="..."
+            style="border-radius: 40px; padding: 20px; border-radius: 40px;">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 30px;">ABOUT US</h5>
+            <p class="card-text">AYAN AUTOMOBILE has more than 17 years of working experience in the automobile sector.
+              During this time, it has established a strong network & working relationship with automobile auctioneers,
+              cargo & freight agencies as well as other related sources & firms hence making it your most reliable
+              source of imported vehicles from Japan & other countries of the world. In this way we also have a major
+              role in the growth of the entire value chain of the local auto industry
+
+              We are the pioneers of importing SUVs from Japan. From seamless bidding process to hassle free custom
+              clearance of vehicle from port authorities, we deliver car to our clients with no compromise</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //==========================FOOTER========================// -->
+
+  <DIV class="CONTAINER-5">
+<footer>
+  
+</footer>
+  </DIV>
+</body>
+
+</html>

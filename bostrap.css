@@ -1,0 +1,94 @@
+body{
+    background-color: rgba(0, 0, 0, 0.514);
+}
+#contactus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.486);
+    height: 600px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 40px;
+
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+.form-group {
+    position: relative;
+    border-bottom: 3px solid white;
+    margin: 30px 0;
+    width: 330px;
+    /* left: 10px; */
+
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    /* padding-bottom: 1px; */
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    /* left: 10px; */
+    padding: 30px 30px 0 10px;
+    color: rgb(255, 254, 254);
+
+}
+
+.form-group label {
+    /* background-color: aqua; */
+    width: 100%;
+    top: 40%;
+    left: 10px;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    margin-bottom: 20px;
+color: white;
+}
+
+input:focus~label,
+input:valid~lable {
+    top: 7px;
+}
+.form-group i{
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    color: rgb(255, 255, 255);
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+input:focus~i,
+input:valid~i{
+    top: 7px;
+}
+#button{
+    width: 100%;
+    border-radius: 40px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+#button:hover{
+color: black;
+background-color: white;
+box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.61);
+}
+
+footer{
+    background:black;
+    height: 300px;
+    width: 100%;
+}
